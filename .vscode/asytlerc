@@ -1,0 +1,4 @@
+--style=allman
+indent-switches
+-t -p
+-M60Ucv

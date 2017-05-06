@@ -1,0 +1,62 @@
+/*
+    // the tasks of c++
+*/
+// {
+//     "version": "0.1.0",
+//     // "command": "PowerShell.exe",
+//     "command": "g++",
+//     // "args": [
+//     //     "-g",
+//     //     "${file}",
+//     //     "-o",
+//     //     "${file}.exe",
+//     //     "`pkg-config --cflags --libs opencv`"
+//     // ],      //g++ test.cpp -o test `pkg-config --cflags --libs opencv`
+//     "args": ["-g","${file}","-o","${file}.exe"],    // 编译命令参数
+//     "isShellCommand": true,
+//     "echoCommand": true,
+//     "problemMatcher": {
+//         "owner": "cpp",
+//         "fileLocation": [
+//             "relative",
+//             "${workspaceRoot}"
+//         ],
+//         "pattern": {
+//             "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+//             "file": 1,
+//             "line": 2,
+//             "column": 3,
+//             "severity": 4,
+//             "message": 5
+//         }
+//     }
+// },
+
+//  the tasks of python 
+{  
+    // See http://go.microsoft.com/fwlink/?LinkId=733558  
+    // for the documentation about the tasks.json format  
+    "version": "0.1.0",  
+    "command": "python",  
+    "isShellCommand": true,  
+    "args": ["${file}"],  
+    "showOutput": "always" ,
+    "options": {
+        "env": {
+            "PYTHONIOENCODING": "UTF-8"
+        }
+    }
+}
+
+/*
+    //the tasks of 默认
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "grunt",
+    "isShellCommand": true,
+    "args": ["--no-color"],
+    "showOutput": "always"
+}
+*/

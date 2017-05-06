@@ -1,0 +1,21 @@
+// 将设置放入此文件中以覆盖默认值和用户设置。
+{
+    "clang.executable":  "D:/Program Files/LLVM/bin/clang.exe",
+    "clang.completion.enable": true,
+    "clang.cxxflags": [
+        "-std=c++11", "-I/path/to/my/include/directory"
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "python.pythonPath": "C:/software/Python/Python35-32/python.exe",
+    "cmake.cmakePath": "D:/Program Files/CMake/bin/cmake.exe",
+    // "python.formatting.provider": "autopep8",
+
+    "python.linting.pylintEnabled": false
+    // "astyle.astylerc": null,
+    // "astyle.astylerc": "${workspaceRoot}/.vscode/asytlerc}",
+    // "astyle.cmd_options": [
+    //     "--indent=tab", "--break-blocks"
+    // ]
+}
