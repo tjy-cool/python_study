@@ -22,7 +22,7 @@ animals = ['Dog', 'Cat', 'Monkey', 'Chook', 'Snake']
 # fish = ['freshwater_fish', 'saltwater_fish']
 animals.extend('fish')
 print(animals)
-animals.sort
+animals.sort()
 # animals.insert(3, 'horse')
 # print(animals)
 

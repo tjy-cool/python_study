@@ -12,6 +12,9 @@ print(random.randrange(1,5))    # 不包含 stop
 print(random.sample(range(100), 5))
 print(random.sample("abcdef", 5))
 
+a = string.ascii_letters
+print(a)
+
 print(string.ascii_letters)
 print(string.digits)
 print(string.hexdigits)
