@@ -111,8 +111,6 @@ def calc(src_str):
     else:
         return float(src_str)
 
-    # return src_str
-
 def main():
     with open('formula.txt', 'r', encoding='utf-8') as f:
         for line in f.readlines():
