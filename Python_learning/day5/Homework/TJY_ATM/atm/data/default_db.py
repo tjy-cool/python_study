@@ -16,7 +16,7 @@ default_db = {
     "balance": 15000,
     "status": 0,  # 0=normal, 1=locked, 2=disabled
     "credit": 15000,
-    "last_login_time": time.time(),
+    "last_login_time": time.strftime('%Y-%d-%m %H:%M:%S', time.localtime()),
     "id": "0001"
 }
 

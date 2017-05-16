@@ -1,0 +1,16 @@
+2017-05-16 13:49:13,063 - tjy_transaction - INFO - query the account information
+2017-05-16 13:49:22,409 - tjy_transaction - INFO - query the account information
+2017-05-16 13:49:29,649 - tjy_transaction - INFO - action:repay   amount:1000.0     interest:0.0
+2017-05-16 13:49:33,744 - tjy_transaction - INFO - action:repay   amount:10000.0     interest:0.0
+2017-05-16 13:50:13,347 - tjy_transaction - INFO - query the account information
+2017-05-16 13:50:18,624 - tjy_transaction - INFO - query the account information
+2017-05-16 13:52:29,417 - tjy_transaction - INFO - query the account information
+2017-05-16 13:52:34,161 - tjy_transaction - INFO - action:repay   amount:100.0     interest:0.0
+2017-05-16 13:52:36,841 - tjy_transaction - INFO - action:repay   amount:3.0     interest:0.0
+2017-05-16 13:52:38,793 - tjy_transaction - INFO - action:repay   amount:1000.0     interest:0.0
+2017-05-16 13:53:03,524 - tjy_transaction - INFO - query the account information
+2017-05-16 13:56:38,274 - tjy_transaction - INFO - query the account information
+2017-05-16 13:56:46,626 - tjy_transaction - INFO - action:withdraw   amount:5.0     interest:0.25
+2017-05-16 13:58:00,424 - tjy_transaction - INFO - query the account information
+2017-05-16 14:01:14,802 - tjy_transaction - INFO - query the account information
+2017-05-16 14:01:48,515 - tjy_transaction - INFO - query the account information

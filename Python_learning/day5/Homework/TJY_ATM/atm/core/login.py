@@ -9,28 +9,35 @@ from conf import settings
 from core import data_handler
 from data import default_db
 
+def login_required(func):
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
 def acc_login(user_data):
-    all_user = data_handler.get_all_username()
-    username = input('\033[1;31m account: \033[0m')
+    username = input('account: ')
     log_obj = logger.logger(username, 'access')
+
     max_try_cnt, try_cnt = 3, 0  # 运行最大尝试次数
+    all_user = data_handler.get_all_username()  # 存在data/accounts文件夹下的所有用户
     if username in all_user :   # 用户名存在
         user_db = data_handler.get_user_db(username)
-        last_login_time = time.strftime("%Y/%m/%d %H:%M:%S",
-                                        time.gmtime(user_db['last_login_time']))
+        last_login_time = user_db['last_login_time']
         if user_db['status'] == 0:  # 正常状态
             while  try_cnt < max_try_cnt:
-                password = input('\033[1;31mPlease input your password(quit:q): \033[0m')
+                password = input('Please input your password(quit:q): ')
                 # 认证成功后欢迎信息 ,判断密码是否与真实密码相等
                 if user_db['password'] == password:
                     welcome_login()   # 欢迎信息
                     log_obj.info('account [%s] are login' % username)
-                    break   # 退出循环
+                    user_data['is_authenticated'] = True
+                    user_data['account_id'] = username
+                    return user_db   # 退出循环
                 elif password == 'q':    # 取消重新登陆，直接退出程序
                     exit()
                 else:   # 未达到三次，最大尝试次数减一
                     try_cnt += 1
-                print('You have %s times chance' % (max_try_cnt-try_cnt))
+                print('You have \033[1;35m%s times chance\033[0m' % (max_try_cnt-try_cnt))
             else:  # 输入三次错误后锁定
                 # localTime = time.strftime("%Y/%m/%d %H:%M:%S", time.localtime())
                 user_db['last_login_time'] = time.time()    # 时间戳
@@ -58,6 +65,7 @@ def acc_login(user_data):
             user_db['id'] = add_user
             user_db['password'] = add_passwd
             data_handler.set_user_db(add_user,user_db)
+
             log_obj = logger.logger(add_user, 'access')
             log_obj.info('account [%s] are login' % add_user)
         else:
@@ -68,6 +76,7 @@ def welcome_login():
     for i in range(6) :
         sys.stdout.write('.')
         sys.stdout.flush()
-        time.sleep(0.2)
-    print("\nwelcome!\n ")  # 相等打印欢迎信息  you are login...
+        time.sleep(0.15)
+
+    print("\nwelcome!")  # 相等打印欢迎信息  you are login...
 

@@ -9,11 +9,13 @@ def logger_test():
     :return: 
     '''
     # 提款，还款，转账，查余额，查账单 信息日志
-    access_logger = logger.logger('0001','access')
-    transaction_logger = logger.logger('0001','transaction')
+    # access_logger = logger.logger('0001','access')
+    # transaction_logger = logger.logger('0001','transaction')
+    acc_log = logger.access_logger('0001')
+    acc_log.info('hahah')
     # 交易信息日志
-    access_logger.info('This is a access logger')
-    transaction_logger.info('This is a transaction logger')
+    # access_logger.info('This is a access logger')
+    # transaction_logger.info('This is a transaction logger')
 
 from core import login
 def login_test():

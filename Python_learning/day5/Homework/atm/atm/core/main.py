@@ -37,12 +37,12 @@ def repay(acc_data):
     :return:
     '''
     account_data = accounts.load_current_balance(acc_data['account_id'])
+    print(account_data)
     #for k,v in account_data.items():
     #    print(k,v )
     current_balance= ''' --------- BALANCE INFO --------
         Credit :    %s
         Balance:    %s''' %(account_data['credit'],account_data['balance'])
-    print(current_balance)
     back_flag = False
     while not back_flag:
         repay_amount = input("\033[33;1mInput repay amount:\033[0m").strip()

@@ -4,6 +4,7 @@
 
 import json, time, os
 from conf import settings
+import re
 
 def get_all_username():
     '''
@@ -31,6 +32,22 @@ def set_user_db(username,user_db):
     with open(userfile, 'w', encoding='utf-8') as fp:
         json.dump(user_db, fp, indent=4)
 
+# def isnum(str):
+    # if str.startwith('-'):  # 以负号开头
+    #     str = str[1:]
+    #     if str.count('.') == 0 and str.isdigit():
+    #         return 'negative_int'   # 负整数
+    #     elif str[1:].count('.') == 1 and str.startwith('.') and str[1:].isdigit():
+    #         return 'negative_non'
+    #     elif
+    # if re.search('^\d+$',str) != None:
+    #     return 'int'
+    # elif re.search('^\d+\.?\d*$',str) != None:
+    #     return 'negative'
+    # elif re.search('^[\+\-]?(\d*\.)?\d*$',str) == None:
+    #     return False
+    # else :
+    #     return True
 
 
 def file_data_handle(conn_params):

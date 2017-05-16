@@ -1,10 +1,10 @@
 {
-    "pay_day": 22,
-    "expire_date": "2021-01-01",
+    "balance": 22000.0,
     "password": "abc",
-    "enroll_date": "2016-01-02",
-    "balance": 20000.0,
+    "id": 1234,
     "status": 0,
-    "credit": 15000,
-    "id": 1234
+    "pay_day": 22,
+    "enroll_date": "2016-01-02",
+    "expire_date": "2021-01-01",
+    "credit": 15000
 }
