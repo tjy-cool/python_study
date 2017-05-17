@@ -177,7 +177,7 @@ def shopping(boughtfile_salary, bought_file, goods_list_file):
                     bought_file_handle.write('\n%s,%s'%(goods_name, goods_price))
                     bought_file_handle.flush()
                     print('Your rest of money: \033[35;1m%s\033[0m' % salary)  # 打印剩下的工资
-                    print('\033[1;31;44m%s\033[0m have been added to the shopping cart!'% goods_name)
+                    print('\033[1;31;44m%s\033[0m have been added to the bin_shopping cart!'% goods_name)
                     show_goods_flag = 1
                 else:  # 不够显示囊中羞涩和剩余薪水
                     print('Your cash-strapped now, the rest of your salary is '

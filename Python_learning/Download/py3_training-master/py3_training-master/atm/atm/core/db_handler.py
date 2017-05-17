@@ -8,18 +8,18 @@ import json,time ,os
 from  conf import settings
 def file_db_handle(conn_params):
     '''
-    parse the db file path
-    :param conn_params: the db connection params set in settings
+    parse the data_base file path
+    :param conn_params: the data_base connection params set in settings
     :return:
     '''
-    print('file db:',conn_params)
+    print('file data_base:',conn_params)
     #db_path ='%s/%s' %(conn_params['path'],conn_params['name'])
     return file_execute
 
 def db_handler():
     '''
-    connect to db
-    :param conn_parms: the db connection params set in settings
+    connect to data_base
+    :param conn_parms: the data_base connection params set in settings
     :return:a
     '''
     conn_params = settings.DATABASE

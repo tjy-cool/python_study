@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Funtion:      
-# Filename:  shopping.py
+# Filename:  bin_shopping.py
 #########################################################################################
 '''
 购物车程序：

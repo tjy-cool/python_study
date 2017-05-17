@@ -5,22 +5,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d0db85e-3ecf-4eb2-8aa9-bea278dce068" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/access_log/tjy_access.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/bin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/bin/atm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/conf/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/conf/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/data_handler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/logger.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/login.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/transaction.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/accounts/1234.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/accounts/tjy.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/transaction_log/transactions.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/accounts/0001.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/transaction_log/0001_transactions.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/example/example.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/example/example.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/default_db.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/default_db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/log/transactions.log" afterPath="$PROJECT_DIR$/day5/Homework/atm/atm/log/transactions.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/logger.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/logger.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/default_db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/example/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/example/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/doc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/shopping_mall/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/atm.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/day5-atm.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/bin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/bin/atm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/bin/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/conf/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/conf/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/accounts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/db_handler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/logger.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/transaction.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/db/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/db/account_sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/db/accounts/1234.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/log/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/log/access.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/log/transactions.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/atm/shopping_mall/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/1234.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/atm/examples/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/doc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/data_base/data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/login.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/user_manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/shopping_mall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/user_management.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/shopping.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/default_db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/goods/goods_list.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/err.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/username_passwd.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/user1_bought.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/login.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/login.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/core/main.py" afterPath="$PROJECT_DIR$/day5/Homework/atm/atm/core/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/data_handler.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/data_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/main.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/bin/atm.py" afterPath="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/bin/atm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/atm/atm/db/accounts/1234.json" afterPath="$PROJECT_DIR$/day5/Homework/atm/atm/db/accounts/1234.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Download/py3_training-master/py3_training-master/atm/atm/conf/settings.py" afterPath="$PROJECT_DIR$/Download/py3_training-master/py3_training-master/atm/atm/conf/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Download/py3_training-master/py3_training-master/atm/atm/core/accounts.py" afterPath="$PROJECT_DIR$/Download/py3_training-master/py3_training-master/atm/atm/core/accounts.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Download/py3_training-master/py3_training-master/atm/atm/core/db_handler.py" afterPath="$PROJECT_DIR$/Download/py3_training-master/py3_training-master/atm/atm/core/db_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day2/Homework/file_test/file_test.py" afterPath="$PROJECT_DIR$/day2/Homework/file_test/file_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day2/Homework/last_version/shopping.py" afterPath="$PROJECT_DIR$/day2/Homework/last_version/shopping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day2/Homework/version1/shopping.py" afterPath="$PROJECT_DIR$/day2/Homework/version1/shopping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day2/Homework/version2/shopping.py" afterPath="$PROJECT_DIR$/day2/Homework/version2/shopping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day2/Homework/滕举元 模拟购物/滕举元 模拟购物/shopping.py" afterPath="$PROJECT_DIR$/day2/Homework/滕举元 模拟购物/滕举元 模拟购物/shopping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py" afterPath="$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/user_manage.py" afterPath="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/user_manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access_log/tjy_access.log" afterPath="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access_log/tjy_access.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transaction_log/tjy_transactions.log" afterPath="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transaction_log/tjy_transactions.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day6/Homework/Readme.txt" afterPath="$PROJECT_DIR$/day6/Homework/Readme.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +105,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/main.py">
+      <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day6/Homework/Readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formula.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day6/Homework/formula.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="224" column="23" lean-forward="true" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
               <folding>
                 <element signature="e#52#74#0" expanded="true" />
               </folding>
@@ -50,73 +137,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="err.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/err.txt">
+      <file leaf-file-name="说明.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/Homework/员工信息表/说明.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="297">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="username_passwd.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/username_passwd.txt">
+      <file leaf-file-name="formula.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day6/Homework/formula.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#51#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_handler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/data_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/user_manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shopping.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/shopping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5400">
-              <caret line="200" column="30" lean-forward="false" selection-start-line="155" selection-start-column="4" selection-end-line="200" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shopping_mall.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/shopping_mall.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="349">
+              <caret line="110" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,14 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/day5/Homework/atm/atm/conf/settings.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/default_db.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/login.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/data_handler.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/transaction.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/main.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/bin/atm.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/transaction_log/0001_transactions.log" />
         <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/example/example.py" />
         <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/access_log/0001_access.log" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/conf/settings.py" />
@@ -169,7 +196,6 @@
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access.log" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transactions.log" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/log.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/data_handler.py" />
         <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/transaction_log/tjy_transactions.log" />
         <option value="$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/access_log/tjy_access.log" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/transaction.py" />
@@ -184,19 +210,28 @@
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf/settings.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/user_management.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/user_management.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/user_manage.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/db/default_db.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/tjy.json" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access_log/tjy_access.log" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/login.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/user_manage.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transaction_log/tjy_transactions.log" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/main.py" />
-        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/login.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/shopping_mall.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/login.py" />
         <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/main.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/login.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shopping/user_management.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/user_manage.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shopping/shopping_mall.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/main.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/data_handler.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/atm/core/user_manage.py" />
+        <option value="$PROJECT_DIR$/day5/Homework/my_atm/doc/Readme.txt" />
+        <option value="$PROJECT_DIR$/day6/Homework/Readme.txt" />
+        <option value="$PROJECT_DIR$/day5/Homework/员工信息表/说明.txt" />
       </list>
     </option>
   </component>
@@ -276,6 +311,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="day6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="day5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -342,127 +413,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping_mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value="shopping" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,23 +551,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="day5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="day4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,7 +565,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="day5" />
+              <option name="myItemId" value="day3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -638,22 +605,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="my_atm" />
+              <option name="myItemId" value="滕举元 第三周作业" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_learning" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
+              <option name="myItemId" value="day3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value="Homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HAproxy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -669,19 +650,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mall\db\user_db" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\atm\core" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mall\core" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mall\bin" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mall\db\goods" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\doc" />
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework" />
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mail_new" />
       <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\atm\bin" />
       <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\atm\shopping_mall" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\atm\core" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\atm\log" />
-      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day3\Homework\滕举元 第三周作业" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework" />
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mail_new\shop_core" />
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mail_new\shopping" />
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mail_new\data_base" />
+      <recent name="E:\vscode_pragram\mine\Python3\Python_learning\day5\Homework\my_atm\shopping_mail_new" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -696,7 +677,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.shopping_mall">
+  <component name="RunManager" selected="Python.formula">
     <configuration default="false" name="atm (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -715,6 +696,42 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="shopping_mall (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shopping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="s14" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shopping/shopping_mall.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="s14" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="shopping_mall" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -722,66 +739,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/bin_shopping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="s14" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/shopping_mall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/bin_shopping/shopping_mall.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="formula" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day6/Homework" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="s14" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf/settings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="user_management" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="s14" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/user_management.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="user_management (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5/Homework/my_atm/atm/bin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="s14" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/user_management.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day6/Homework/formula.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -885,18 +866,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.atm (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.shopping_mall" />
-      <item index="2" class="java.lang.String" itemvalue="Python.settings" />
-      <item index="3" class="java.lang.String" itemvalue="Python.user_management" />
-      <item index="4" class="java.lang.String" itemvalue="Python.user_management (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.shopping_mall (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.shopping_mall" />
+      <item index="4" class="java.lang.String" itemvalue="Python.formula" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.shopping_mall" />
+        <item index="0" class="java.lang.String" itemvalue="Python.formula" />
         <item index="1" class="java.lang.String" itemvalue="Python.atm (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.user_management (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.user_management" />
-        <item index="4" class="java.lang.String" itemvalue="Python.settings" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.shopping_mall" />
+        <item index="4" class="java.lang.String" itemvalue="Python.shopping_mall (1)" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -978,12 +959,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19306667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19306667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33370537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2096" sideWeight="0.5025" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4341518" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65401787" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38058037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1174,6 +1154,11 @@
           <line>79</line>
           <option name="timeStamp" value="142" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1182,7 +1167,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="143" />
+      <option name="time" value="144" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1191,82 +1176,7 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day4/Code/decoratory2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/atm/atm/core/transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/atm/atm/core/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transactions.log" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access.log" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/atm/atm/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#121#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access_log/hao_access.log" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/transaction_log/tjy_transactions.log" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/log/access_log/tjy_access.log" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/data/accounts/tjy.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="138" column="63" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="138" selection-end-column="63" />
-          <folding>
-            <element signature="e#51#62#0" expanded="true" />
-            <element signature="e#3497#3551#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/logger_copy1.py" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/atm/atm/log/transactions.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="89" lean-forward="false" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/logger.py" />
     <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf.py" />
     <entry file="file://$PROJECT_DIR$/day2/Homework/滕举元 模拟购物/滕举元 模拟购物/shopping.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1276,76 +1186,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/_logger.py" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/user_management.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/abc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transaction_log/1234_transactions.log" />
     <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access_log/1234_access.log" />
     <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/access_log/abc_access.log" />
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/data_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/tjy.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/1234.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/default_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/conf/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/user_management.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/user_manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="100" column="83" lean-forward="true" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -1356,128 +1203,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transaction_log/tjy_transactions.log">
+    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/transaction.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/login.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/goods/goods_list.txt" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/default_db.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/user1_bought.txt" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/username_passwd.txt" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/err.txt" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/user_management.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/shopping_mall.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/shopping.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/conf/settings.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/data_base/goods/goods_list.txt" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/login.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/user_manage.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/data_base/data.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/bin_shopping/user_management.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/conf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/login.py">
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/default_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="240" column="26" lean-forward="true" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
-          <folding>
-            <element signature="e#52#74#0" expanded="true" />
-            <element signature="e#282#1057#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/TJY_ATM/atm/core/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/要求.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/goods/goods_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/default_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/err.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/user1_bought.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/db/user_db/username_passwd.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/data_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#51#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/user_manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/shopping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5400">
-          <caret line="200" column="30" lean-forward="false" selection-start-line="155" selection-start-column="4" selection-end-line="200" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="486">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1488,18 +1240,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py">
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/log/transaction_log/tjy_transactions.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="20" column="85" lean-forward="true" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mall/bin/shopping_mall.py">
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/bin_shopping/shopping_mall.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping_mail_new/shop_core/main.py" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/51cto.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping/shop_core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping/shop_core/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping/shop_core/user_manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/目录.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/atm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/1234.json" />
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/db/accounts/abc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/shopping/data_base/user_db/username_passwd.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/user_manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/要求.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/bin/user_management.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/data_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/doc/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6/Homework/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6/Homework/formula.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="110" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6/Homework/formula.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/员工信息表/说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/Homework/my_atm/atm/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="224" column="23" lean-forward="true" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
+          <folding>
+            <element signature="e#52#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
