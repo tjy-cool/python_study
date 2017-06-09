@@ -1,0 +1,21 @@
+1. 函数传参时使用当前实参的引用？还是重新创建的值？
+
+2. Python的什么为作用域？并写代码验证
+    A. 缩进的代码块       B. 函数
+
+3. 简述深浅拷贝的原理？
+
+4. 简述sys.path的作用以及模块命名注意事项
+
+5. 简述re模块中 match、search以及findall方法的特点
+s = """life is short, life is good, life is beauty!"""
+print(re.match(r'is', s))
+print(re.search(r'is', s))
+print(re.findall(r'life is (\w+)', s))
+print(re.sub(r'life', 'wife', s))
+
+7. 写代码实现：1*2+3*4+5*6+7*8...+99*100
+
+8. Python中两种序列化Json和Pickle的区别
+
+9. 书写代码，创建6位的随机验证码（含数字和字母）

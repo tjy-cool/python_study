@@ -1,0 +1,33 @@
+分析：
+    1. 备份函数只进行备份，及打开文件读取后写入到备份文件
+    2. 读文件
+
+    输入的backend格式为：
+"""
+{
+    'backend': 'www.124oldboy.org',
+    'record':{
+        'server': '220.2.8.10',
+        'weight': 20,
+        'maxconn': 30
+    }
+}
+"""
+
+    backend 的标准字典格式
+    one_backend_dict =
+'''
+{
+    'backend': 'www.oldboy.org',
+    'record': [{'server': ['100.1.7.9'], 'weight': 20, 'maxconn': 30},
+               {'server': ['100.1.7.8', '100.21.32.2'], 'weight': 40, 'maxconn': 30}]
+}
+'''
+    所有的dict为：
+    all_backend_dict = [dict1, dict2, dict3, ...]
+
+
+
+[{'backend': 'www.oldboy.org',
+'record': [{'server': ['', '', '', '', '', '', '',
+            'server', '100.1.7.9', '100.1.7.9'], 'weight': '20', 'maxconn': '3000'}]}]

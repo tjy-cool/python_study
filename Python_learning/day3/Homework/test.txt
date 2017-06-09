@@ -1,3 +1,0 @@
-backend www.oldboy.org
-        server100.1.7.9 100.1.7.9 weight 20 maxconn 3000
-

@@ -1,0 +1,21 @@
+文件：E:\vscode_pragram\mine\Python3\Python_learning\wxpython_leanning\helloworld\create_basic_frame.py
+大小：306字节
+修改时间：2017-05-29  11:10:52
+MD5：6D0F35F18795D41F4E9664763E941887
+SHA1：807FF2FD6268C2B89FFF34B43C7B60574AB93CE3
+CRC32：B1FAEEDD
+
+文件：E:\vscode_pragram\mine\Python3\Python_learning\wxpython_leanning\helloworld\create_buttons.py
+大小：306字节
+修改时间：2017-05-29  11:10:52
+MD5：6D0F35F18795D41F4E9664763E941887
+SHA1：807FF2FD6268C2B89FFF34B43C7B60574AB93CE3
+CRC32：B1FAEEDD
+
+文件：E:\vscode_pragram\mine\Python3\Python_learning\wxpython_leanning\helloworld\file_dialog.py
+大小：5519字节
+修改时间：2017-05-30  02:47:38
+MD5：06131552DF6B09CE721557146A5A4DBB
+SHA1：CD9F9E29B721B57688927B6DCD41E644B6270425
+CRC32：25E5F311
+
