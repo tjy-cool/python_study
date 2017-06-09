@@ -6,7 +6,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
-            "pythonPath": "C:/software/Python/Python35-32/python.exe",
+            "pythonPath": "C:/software/Python/Python36-32/python.exe",
             "program": "${file}",
             "cwd": "",
             "console": "integratedTerminal",
@@ -22,7 +22,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
-            "pythonPath": "C:/software/Python/Python35-32/python.exe",
+            "pythonPath": "C:/software/Python/Python36-32/python.exe",
             "program": "${file}",
             // "cwd": "${workspaceRoot}",
             "console": "externalTerminal",
@@ -32,47 +32,47 @@
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit"
             ]
-        },
-        
-        {
-            "name": "C++ Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${file}.exe",
-            "args": [],
-            "preLaunchTask": "g++",
-            "stopAtEntry": false,
-            "cwd": "${workspaceRoot}",
-            "environment": [],
-            "externalConsole": true,
-            "windows": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "c:\\MinGW\\bin\\gdb.exe",
-                "setupCommands": [
-                    {
-                        "description": "Enable pretty-printing for gdb",
-                        "text": "-enable-pretty-printing",
-                        "ignoreFailures": true
-                    }
-                ]
-            }
-        },
-        {
-            "name": "C++ Attach",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "${file}.exe", //${file}.exe    ${workspaceRoot}/test.exe
-            "processId": "${command：pickProcess}",
-            "windows": {
-                "MIMode": "gdb",
-                "setupCommands": [
-                    {
-                        "description": "Enable pretty-printing for gdb",
-                        "text": "-enable-pretty-printing",
-                        "ignoreFailures": true
-                    }
-                ]
-            }
         }
+        
+        // {
+        //     "name": "C++ Launch",
+        //     "type": "cppdbg",
+        //     "request": "launch",
+        //     "program": "${file}.exe",
+        //     "args": [],
+        //     "preLaunchTask": "g++",
+        //     "stopAtEntry": false,
+        //     "cwd": "${workspaceRoot}",
+        //     "environment": [],
+        //     "externalConsole": true,
+        //     "windows": {
+        //         "MIMode": "gdb",
+        //         "miDebuggerPath": "c:\\MinGW\\bin\\gdb.exe",
+        //         "setupCommands": [
+        //             {
+        //                 "description": "Enable pretty-printing for gdb",
+        //                 "text": "-enable-pretty-printing",
+        //                 "ignoreFailures": true
+        //             }
+        //         ]
+        //     }
+        // },
+        // {
+        //     "name": "C++ Attach",
+        //     "type": "cppdbg",
+        //     "request": "attach",
+        //     "program": "${file}.exe", //${file}.exe    ${workspaceRoot}/test.exe
+        //     "processId": "${command：pickProcess}",
+        //     "windows": {
+        //         "MIMode": "gdb",
+        //         "setupCommands": [
+        //             {
+        //                 "description": "Enable pretty-printing for gdb",
+        //                 "text": "-enable-pretty-printing",
+        //                 "ignoreFailures": true
+        //             }
+        //         ]
+        //     }
+        // }
     ]
 }
