@@ -1,5 +1,6 @@
+    self 为对象，cls为类
 
-    类---》实例化--》实例对象
+    类 --》实例化--》实例对象
     __init__ 构造函数
     __del__ 析构函数
     self.name = name    # 属性，成员变量，字段
@@ -12,7 +13,7 @@
 私有属性
     __private_attr_name = value
 
-    def get_heart(self):    #对外部提供只读访问接口
+    def get_heart(self):    # 对外部提供只读访问接口
         return self.__heart # 相当于c++里面的private
 
     r1._Role__heart     # 强制访问私有属性, 格式：对象名._类名__属性名
@@ -73,7 +74,6 @@
 类方法
     @classmethod
     只能访问类变量，不能访问实例变量
-
 
 属性方法
     @property

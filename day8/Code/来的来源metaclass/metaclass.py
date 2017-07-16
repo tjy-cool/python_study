@@ -22,7 +22,7 @@ class MyType(type):
 print('here...')
 class Foo(object,metaclass=MyType):
 # class Foo(object):
-#     __metaclass__ = MyType
+#     __metaclass__ = MyType    # py2.x的写法
     def __init__(self,name):
         self.name = name
         print("Foo __init__")
