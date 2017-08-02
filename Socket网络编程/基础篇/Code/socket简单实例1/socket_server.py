@@ -6,7 +6,7 @@ import socket
 server = socket.socket()
 
 server.bind(('localhost', 6969))    # 绑定要监听的端口
-server.listen()     # 监听
+server.listen(5)     # 监听
 
 print("我要开始等电话了")
 conn,addr = server.accept()     # 等电话打进来

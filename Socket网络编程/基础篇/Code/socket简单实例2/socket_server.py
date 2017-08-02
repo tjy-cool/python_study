@@ -7,7 +7,7 @@ import socket
 server = socket.socket()
 
 server.bind(('localhost', 6969))    # 绑定要监听的端口
-server.listen()     # 监听， 一般写5个
+server.listen(5)     # 监听， 一般写5个
 while True:
     print("等电话中...")
     # conn 就是客户端连接过来的，在服务端为其生成的一个连接实例
