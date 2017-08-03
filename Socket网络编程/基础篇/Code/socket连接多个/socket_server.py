@@ -2,11 +2,11 @@
 # Funtion:      
 # Filename:
 
-import socket
+import socket,os
 
 server = socket.socket()
-server.bind(("localhost", 1212))
-server.listen(5)
+server.bind(("localhost", 1313))
+server.listen(1)
 while True:
     conn, addr = server.accept()
     while True:
@@ -15,6 +15,7 @@ while True:
         print(recv_data.decode())
         if not recv_data:
             break
-        conn.send(recv_data)            # "the client send data is".encode()
+        res = os.popen(recv_data.decode()).read()
+        conn.send(res.encode())            # "the client send data is".encode()
 
 server.close()
