@@ -12,12 +12,20 @@
 import socket
 
 client = socket.socket()
-client.connect(("localhost", 1234))
-
+client.connect(("localhost", 6969))
+login_flag = -1    # 登陆状态，-1表示没有登陆，0表示需要输入密码,1表示已经登陆
 while True:
-    username = input("username: ")
-    client.send(username.encode())
-    data = client.recv(1024)
-    print(data.decode())
+    if login_flag == -1:    # -1表示没有登陆，提示输入用户名
+        send_data = input("username: ")
+    if login_flag == 0: # 0表示需要输入密码，提示输入密码
+        send_data = input("passwd: ")
+    if login_flag == 1: # 1表示已经登陆,提示输入命令行
+        send_data = input(">>: ")
+    client.send(send_data.encode())     # 发送信息
+    recv_data = client.recv(1024)       # 接受信息
+    # if recv_data.decode() == "flag = 0":
+    #
+    #     if data == "passwd":
+    #         print(data.decode())
 
 client.close()
