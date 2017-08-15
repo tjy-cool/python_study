@@ -31,7 +31,7 @@ class Ftp_server(object):
                     self.download(conn)
                 elif command == "upload":   # 上传文件
                     self.upload()
-                elif command == "ls":       # 显示文件目录
+                elif command.decode() == "ls":       # 显示文件目录
                     self.ls(conn)
 
     def read_User_Passwd(self, input_user, input_passwd):
@@ -61,7 +61,9 @@ class Ftp_server(object):
         pass
 
     def ls(self, conn):
-
+        data = os.popen('ls').read()
+        print(data)
+        conn.send(data.encode())
         pass
 
 

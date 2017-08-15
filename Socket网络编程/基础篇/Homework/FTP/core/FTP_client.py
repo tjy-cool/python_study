@@ -21,7 +21,7 @@ def login(func):
         if args[1]["is_authenticated"] == False:
             print('\033[31;0mNo user authenticated. Please authenticated\033[0m')
             return
-        func(args, kwargs)
+        func(*args,  **kwargs)
     return wripper
 
 msg1 = '''===============================
@@ -91,8 +91,9 @@ class Ftp_client(object):
 
     @login
     def ls(self, user_acc):
+        data = self.client.recv(1024)
+        print(data.decode())
 
-        pass
 
 client = Ftp_client("localhost", 6969)
 client.run_client()
