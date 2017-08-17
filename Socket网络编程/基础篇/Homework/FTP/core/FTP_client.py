@@ -21,10 +21,15 @@ def login(func):
         print(args[1])
         if args[1]["is_authenticated"] == False:
             print('\033[31;0mNo user authenticated. Please authenticated\033[0m')
+<<<<<<< HEAD
         else :
             # print("slef: ", self)
             # print("*args: ", *args)
             func(*args, **kwargs)
+=======
+            return
+        func(*args,  **kwargs)
+>>>>>>> 0ce70364e9f18a3b81c503752c4856ddb4a7a564
     return wripper
 # 显示信息
 msg1 = '''\033[1;31m===============================\033[0m
@@ -93,11 +98,16 @@ class Ftp_client(object):
 
     @login
     def ls(self, user_acc):
+        data = self.client.recv(1024)
+        print(data.decode())
 
+<<<<<<< HEAD
         self.client.send('ls'.encode())  # 发送命令
         data = self.client.recv(1024)
         print(data.decode())
 
+=======
+>>>>>>> 0ce70364e9f18a3b81c503752c4856ddb4a7a564
 
 client = Ftp_client("localhost", 6969)
 client.run_client()
