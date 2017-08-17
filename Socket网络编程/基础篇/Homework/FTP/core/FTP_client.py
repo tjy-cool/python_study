@@ -9,7 +9,7 @@
 # 4. 查看当前目录下文件
 # 5. 充分使用面向对象知识
 
-import socket
+import socket, sys
 
 user_data = {
     'user_name':None,
@@ -18,41 +18,43 @@ user_data = {
 
 def login(func):
     def wripper(*args, **kwargs):
+        print(args[1])
         if args[1]["is_authenticated"] == False:
             print('\033[31;0mNo user authenticated. Please authenticated\033[0m')
-            return
-        func(args, kwargs)
+        else :
+            # print("slef: ", self)
+            # print("*args: ", *args)
+            func(*args, **kwargs)
     return wripper
-
-msg1 = '''===============================
-用户登陆（login)
-上传(update)/下载(download)文件
-查看当前目录下文件(ls)
-=============================='''
-msg2 = '''===============================
-上传(update)/下载(download)文件
-查看当前目录下文件(ls)
-=============================='''
+# 显示信息
+msg1 = '''\033[1;31m===============================\033[0m
+\033[1;32m       用户登陆（login)
+ 上传(update)/下载(download)文件
+     查看当前目录下文件(ls)\033[0m
+\033[1;31m==============================\033[0m'''
+msg2 = '''\033[1;31m===============================\033[0m
+\033[1;32m 上传(update)/下载(download)文件
+    查看当前目录下文件(ls)\033[0m
+\033[1;31m==============================\033[0m'''
 
 class Ftp_client(object):
     def __init__(self, ip, port):
         self.ip = ip
         self.port = port
-        # self.user_data = user_data
-
         client = socket.socket()
         client.connect((self.ip, self.port))
         self.client = client
 
     def run_client(self):
-
         while True:
             if user_data['is_authenticated'] == False:
                 print(msg1)
             else:
                 print(msg2)
-
             send_command = input("请输入您的动作：")
+            if len(send_command) == 0:
+                continue
+
             if send_command == 'login':
                 self.in_login()
             elif send_command == "download": # 下载文件
@@ -61,8 +63,7 @@ class Ftp_client(object):
                 self.upload(user_data)
             elif send_command == "ls":       # 显示文件目录
                 self.ls(user_data)
-                pass
-            self.client.close()
+        self.client.close()
 
     def in_login(self):
         if user_data['is_authenticated'] == False:
@@ -81,6 +82,7 @@ class Ftp_client(object):
         else:
             print("%s had been authenticated." % user_data['user_name'])
 
+
     @login
     def download(self, user_acc):
         pass
@@ -92,7 +94,10 @@ class Ftp_client(object):
     @login
     def ls(self, user_acc):
 
-        pass
+        self.client.send('ls'.encode())  # 发送命令
+        data = self.client.recv(1024)
+        print(data.decode())
+
 
 client = Ftp_client("localhost", 6969)
 client.run_client()

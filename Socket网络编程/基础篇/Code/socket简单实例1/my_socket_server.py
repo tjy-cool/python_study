@@ -2,7 +2,7 @@
 # Funtion:      
 # Filename:
 
-import socket
+import socket, os
 server = socket.socket()
 server.bind(("localhost", 1313))
 server.listen()
@@ -12,6 +12,11 @@ conn,addr = server.accept()
 print("conn: %s\naddr: %s" % (conn, addr))
 while True:
     data = conn.recv(1024)
-    print("recv: %s" % data.decode())
-    conn.send(data*2)
+    if data.decode() == "ls":
+        data = os.popen("dir").read()
+        print(data)
+        conn.send(data.encode())
+    else:
+        print("recv: %s" % data.decode())
+        conn.send(data)
 server.close()

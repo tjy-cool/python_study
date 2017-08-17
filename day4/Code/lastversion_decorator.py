@@ -12,6 +12,7 @@ def author(auth_type):
                 if username == user and password == passwd:
                     print('\033[31;1mUser has authentication\033[0m')
                     res = func(*args, **kwargs)
+                    print('args: ',*args)
                     print('----after authentication ')
                     return res
                 else :
@@ -28,16 +29,17 @@ def author(auth_type):
 def index():
     print('\033[32;1mWelcome to index page! \033[0m')
 
-@author(auth_type = 'local')     # home = wripper(home)
-def home(x):
+@author(auth_type = 'local')     # home = out_wripper(home)
+def home(x, y):
     print('\033[32;1mWelcome to home page! \033[0m')
     print(x)
-    return x**2
+    return x*y
 
 @author(auth_type= 'local')
 def bbs():
     print('\033[32;1mWelcome to bbs page! \033[0m')
 
 index()
-print(home(123))
-bbs()
+print(home(123,2))
+# bbs()
+

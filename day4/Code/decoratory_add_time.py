@@ -14,7 +14,7 @@ def count_time(fun):
     return wripper
 
 @count_time
-def calc(n):
+def calc(n):    # calc = count_time(calc)
     for i in range(n):
         time.sleep(0.1)
 
