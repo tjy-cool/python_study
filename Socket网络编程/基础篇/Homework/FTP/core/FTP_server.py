@@ -36,7 +36,7 @@ class Ftp_server(object):
                     self.download(conn)
                 elif command == "upload":   # 上传文件
                     self.upload()
-                elif command.decode() == "ls":       # 显示文件目录
+                elif command == "ls":       # 显示文件目录
                     self.ls(conn)
                 # else:
                 #     conn.send("ERROR!".encode())
@@ -72,15 +72,11 @@ class Ftp_server(object):
         pass
 
     def ls(self, conn):
-<<<<<<< HEAD
         data = os.popen('dir').read()
         print("dir: \n", data)
         conn.send(data.encode())
-=======
-        data = os.popen('ls').read()
-        print(data)
-        conn.send(data.encode())
-        pass
+        # data = os.popen('ls').read()
+        # conn.send(data.encode())
 
 
         # while True:
@@ -120,9 +116,6 @@ class Ftp_server(object):
         #             # conn.send(res.encode())
         # server.close()
 
-
-
->>>>>>> 0ce70364e9f18a3b81c503752c4856ddb4a7a564
 
 ftp_server = Ftp_server("localhost", 6969)
 ftp_server.run_server()
