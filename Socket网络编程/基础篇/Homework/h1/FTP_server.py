@@ -15,8 +15,6 @@ class Ftp_server(object):
     def __init__(self, ip, port):
         self.ip = ip
         self.port = port
-    # def login(self):
-    #     pass
 
     def run_server(self):
         server = socket.socket()
