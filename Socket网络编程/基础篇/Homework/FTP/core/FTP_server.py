@@ -23,7 +23,7 @@ class Ftp_server(object):
         server.listen(5)
         while True:
             conn, addr = server.accept()
-            self.recv_platform = conn.recv(1024).decode()
+            self.recv_platform = conn.recv(1024).decode()   # 先接受客户端的平台信息
             while True:
                 recv_data = conn.recv(1024)
                 if not recv_data:
