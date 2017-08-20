@@ -103,8 +103,27 @@ INSTALLED_APPS = [
 ]
 ```
 
-- b.使用命令创建表
+- c.使用命令创建表
 ```
 python manage.py makemigrations     # 生成配置文件
 python manage.py migrate        # 根据配置文件创建数据库相关
+```
+- d.默认表名
+```
+    appname_classname
+```
+
+- e.views中导入modles
+
+- f.POST提交数据，在settings中操作：
+```python
+    MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 ```
