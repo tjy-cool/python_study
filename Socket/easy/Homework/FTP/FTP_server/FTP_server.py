@@ -10,8 +10,9 @@
 # 5. 充分使用面向对象知识
 
 import socket,os
-base_dir = os.path.abspath(__file__)
-print(base_dir)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))    # 即为FTP的绝对路径
+# BASE_DIR = BASE_DIR+'/db/'
+# print(BASE_DIR)
 class Ftp_server(object):
     def __init__(self, ip, port):
         self.ip = ip
@@ -50,8 +51,9 @@ class Ftp_server(object):
                 username = line.split(",")[0].strip()
                 passwd = line.split(",")[1].strip()
                 if input_user == username and input_passwd == passwd:
-                    if os.path.isdir(base_dir):     # 判断该用户的家目录是否存在
-                        pass
+                    if not os.path.isdir(BASE_DIR+os.sep+username):     # 判断该用户的家目录是否存在
+                        os.mkdir(BASE_DIR+os.sep+username)
+                    self.username = username
                     return username     # 如果用户名和密码正确返回用户名，如果不正确返回None
         return None
 
@@ -73,11 +75,10 @@ class Ftp_server(object):
         pass
 
     def ls(self, conn):
-             
         if self.recv_platform == "win32":
             data = os.popen('dir').read()
         elif self.recv_platform == "linux":
-            data = os.popen('ls').read()
+            data = os.popen('ls %s' % BASE_DIR+os.sep+self.username).read()
         print("当前目录: \n", data)
         conn.send(data.encode())
 

@@ -12,8 +12,9 @@
 import socket, sys
 
 user_data = {
-    'user_name':None,
+    'user_name': None,
     'is_authenticated':False,
+    'base_path': None
 }
 
 def login(func):
@@ -95,7 +96,7 @@ class Ftp_client(object):
     def ls(self, user_acc):
         self.client.send('ls'.encode())  # 发送命令
         data = self.client.recv(1024)
-        print(data.decode())
+        # print(data.decode())
 
 client = Ftp_client("localhost", 6969)
 client.run_client()
