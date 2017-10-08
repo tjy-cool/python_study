@@ -19,7 +19,6 @@ user_data = {
 
 def login(func):
     def wripper(*args, **kwargs):
-        print(args[1])
         if args[1]["is_authenticated"] == False:
             print('\033[31;0mNo user authenticated. Please authenticated\033[0m')
         else :
@@ -28,11 +27,11 @@ def login(func):
 # 显示信息
 msg1 = '''\033[1;31m===============================\033[0m
 \033[1;32m       用户登陆（login)
- 上传(update)/下载(download)文件
+ 上传(upload)/下载(download)文件
      查看当前目录下文件(ls)\033[0m
 \033[1;31m==============================\033[0m'''
 msg2 = '''\033[1;31m===============================\033[0m
-\033[1;32m 上传(update)/下载(download)文件
+\033[1;32m 上传(upload)/下载(download)文件
     查看当前目录下文件(ls)\033[0m
 \033[1;31m==============================\033[0m'''
 
@@ -86,17 +85,33 @@ class Ftp_client(object):
 
     @login
     def download(self, user_acc):
-        pass
+        self.client.send('download'.encode())  # 发送命令
+        file_name = input("Please Input filename what you want download: ")
+        self.client.send(file_name.encode())    # 发送需要下载的文件
+        ff = self.client.recv(1024000)
+        if ff.decode() == "None":
+            print("\033[31;1mInput Error Filename！\033[0m")
+        else:
+            with open(file_name, 'w', encoding="utf-8") as f:
+                f.write(ff.decode())
+                print("download file <%s> successful!" % file_name)
 
     @login
     def upload(self, user_acc):
-        pass
-
+        self.client.send('upload'.encode())
+        file_name = input("Please Input filename what you want upload: ")
+        self.client.send(file_name.encode())
+        with open(file_name, 'r', encoding='utf-8') as f:
+            self.client.send(f.read().encode())
+        if self.client.recv(1024).decode() == 'OK':
+            print("Send file <%s> successful!" % file_name)
+        else:
+            print("Send file faild!")
     @login
     def ls(self, user_acc):
         self.client.send('ls'.encode())  # 发送命令
         data = self.client.recv(1024)
-        # print(data.decode())
+        print(data.decode())
 
 client = Ftp_client("localhost", 6969)
 client.run_client()

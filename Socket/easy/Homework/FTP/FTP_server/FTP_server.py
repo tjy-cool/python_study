@@ -37,7 +37,7 @@ class Ftp_server(object):
                 elif command == "download": # 下载文件
                     self.download(conn)
                 elif command == "upload":   # 上传文件
-                    self.upload()
+                    self.upload(conn)
                 elif command == "ls":       # 显示文件目录
                     self.ls(conn)
                 # else:
@@ -53,6 +53,7 @@ class Ftp_server(object):
                 if input_user == username and input_passwd == passwd:
                     if not os.path.isdir(BASE_DIR+os.sep+username):     # 判断该用户的家目录是否存在
                         os.mkdir(BASE_DIR+os.sep+username)
+                    os.chdir(username)  # 切换目录到用户目录下
                     self.username = username
                     return username     # 如果用户名和密码正确返回用户名，如果不正确返回None
         return None
@@ -69,16 +70,33 @@ class Ftp_server(object):
             conn.send("None".encode())
 
     def download(self, conn):
-        pass
+        file_name = conn.recv(1024).decode()
+        allfile = os.listdir('.')
+        if file_name in allfile:
+            print("begin send file")
+            with open(file_name, 'r', encoding='utf-8') as f:
+                ff = f.read()
+                conn.send(ff.encode())
+            print("send file successful!")
+        else:
+            conn.send("None".encode())
 
-    def upload(self):
-        pass
+
+    def upload(self, conn):
+        file_name = conn.recv(1024).decode()
+        print("file_name", file_name)
+        ff = conn.recv(1024000).decode()
+        print(ff)
+        with open(file_name, 'w', encoding="utf-8") as f:
+            f.write(ff)
+        conn.send("OK".encode())
 
     def ls(self, conn):
+        print(os.path)
         if self.recv_platform == "win32":
-            data = os.popen('dir').read()
+            data = os.popen('dir').read()       #  BASE_DIR+os.sep+self.username
         elif self.recv_platform == "linux":
-            data = os.popen('ls %s' % BASE_DIR+os.sep+self.username).read()
+            data = os.popen('ls' ).read()
         print("当前目录: \n", data)
         conn.send(data.encode())
 

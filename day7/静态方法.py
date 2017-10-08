@@ -24,4 +24,4 @@ class Dog(object):
 d1 = Dog('Bagong')
 d2 = Dog('haha')
 
-d1.eat(d2, 'fds')
+d1.eat(d2, 'fds.txt')
