@@ -12,6 +12,8 @@ def multiprocess_run(name, num):
     print('%s running...' % name )
     t1 = threading.Thread(target=threading_run, args=(num,))
     t1.start()
+    print('--------',t1.getName(),t1.ident, threading.get_ident())
+    # print()
     time.sleep(2)
 
 if __name__ == '__main__':

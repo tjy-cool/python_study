@@ -40,7 +40,7 @@ d1.eat
 # print(d1.eat)
 #
 del d1.eat
-d1.eat
+# d1.eat
 # print(d1.eat)
 
 # del d1.name

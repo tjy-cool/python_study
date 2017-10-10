@@ -2,12 +2,12 @@
 # Funtion:      
 # Filename:
 
-# 信号量
-import threading
-# 实例化信号量锁，最大允许5个线程运行
-semaphore = threading.BoundedSemaphore(5)
-semaphore.acquire()     # 增加信号量锁
-semaphore.release()     # 释放信号量锁
+# # 信号量
+# import threading
+# # 实例化信号量锁，最大允许5个线程运行
+# semaphore = threading.BoundedSemaphore(5)
+# semaphore.acquire()     # 增加信号量锁
+# semaphore.release()     # 释放信号量锁
 
 
 import threading, time

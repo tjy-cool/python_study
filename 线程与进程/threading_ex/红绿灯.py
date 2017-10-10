@@ -26,6 +26,7 @@ def light():
 def car(name):
     while True:
         if light_event.is_set():    # 绿灯
+            # light_event.is_set()
             print('[%s] running ...' % name)
             time.sleep(1)
         else:   # 红灯

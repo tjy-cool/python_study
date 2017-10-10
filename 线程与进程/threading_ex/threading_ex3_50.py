@@ -16,10 +16,12 @@ for i in range(50):
     t.start()
     t_thread.append(t)
 
+print(threading.active_count())
+
 for t in t_thread:
     t.join()
 
-print(threading.active_count())
+
 print('------  All Thread has finished.... -------', threading.current_thread())
 print('spend time: ' , time.time() - start_time)
 
