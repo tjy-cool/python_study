@@ -2,7 +2,9 @@
 # Funtion:      
 # Filename:
 
-import os
+# db/username_passwd    存储用户名和密码等用户文件
+
+import os, logging
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 HOST, PORT = 'localhost', 9999
@@ -26,5 +28,10 @@ MYERRORS = {
 }
 
 # log等级设置
+LOG_LEVEL = logging.INFO    # 默认log等级，五个等级为debug，info，warning，error，critical
+IsShowonScreen = False      # 是否在屏幕上显示
+Ch_Format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # log在屏幕上显示格式
+Fh_Format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # log在文件中显示格式
+# log文件存储位置     "%s/log/%s_log" % (settings.BASE_DIR,username)
 
 

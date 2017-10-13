@@ -1,0 +1,4 @@
+INFO:root:test info
+WARNING:root:test warning
+ERROR:root:test error
+CRITICAL:root:test critical

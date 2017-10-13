@@ -1,0 +1,8 @@
+10/11/2017 03:55:22 PM logging mod.py (14) - WARNING:warning
+10/11/2017 03:55:22 PM logging mod.py (15) - ERROR:error
+10/11/2017 03:55:22 PM logging mod.py (16) - CRITICAL:critical
+10/11/2017 03:55:22 PM logging mod.py (23) - WARNING:app has been run too long ...
+10/11/2017 03:56:24 PM logging_mod.py (14) - WARNING:warning
+10/11/2017 03:56:24 PM logging_mod.py (15) - ERROR:error
+10/11/2017 03:56:24 PM logging_mod.py (16) - CRITICAL:critical
+10/11/2017 03:56:24 PM logging_mod.py (23) - WARNING:app has been run too long ...

@@ -60,6 +60,8 @@ class FTP_Client(object):
 
 
     def cmd_pull(self, *args):      # 下载文件
+        # cmd_split = args[0]
+        # if
         pass
 
     def cmd_defalut(self, *args):   # 如 ls, ifconfig, cd 等无数据交流的命令

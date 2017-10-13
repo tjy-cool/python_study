@@ -5,7 +5,8 @@ import logging
 from logging import handlers
 logger = logging.getLogger('TEST')
 logfile = 'timelog.log'
-fh = handlers.RotatingFileHandler(filename=logfile, maxBytes=10, backupCount=3, encoding='utf-8')
+# fh = handlers.RotatingFileHandler(filename=logfile, maxBytes=10, backupCount=3, encoding='utf-8')
+fh = handlers.TimedRotatingFileHandler(filename=logfile, when='S', interval=5, backupCount=3, encoding='utf-8')
 
 formatter = logging.Formatter('%(asctime)s %(module)s:%(lineno)d %(message)s')
 fh.setFormatter(formatter)

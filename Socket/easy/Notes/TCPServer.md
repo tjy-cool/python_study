@@ -6,4 +6,4 @@
 3. server.handler_request()     # 只处理一个请求
    server.request_forever()     # 处理多个请求，永远执行
 
-4. 调用server_close() 关闭socket.
+4. 调用server_close() 关闭socket。
