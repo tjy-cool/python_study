@@ -20,13 +20,15 @@ class FTP_Client(object):
     def run(self):
         user_db = self.authentication()
         if isinstance(user_db, dict):     # 返回的数据是字典格式
-            user_current_dir = "%s:home/$"%(user_db['user_name'])   # 保存的是用户目录
+            user_re_dir = "%s"%(user_db['user_name'])   # 保存的是相对用户目录
             while True:
-                cmd  = input(user_current_dir).strip()
+                cmd  = input(user_re_dir+':/$ ').strip()
+                print(cmd)
                 if len(cmd):
                     if hasattr(self, cmd.split(' ')[0]):
+                        print('-----')
                         func = getattr(self, cmd.split(' ')[0])
-                        func(cmd, user_current_dir)
+                        func(cmd, user_re_dir)
                     else:
                         print('Error command, Try again...')
                 # else:
@@ -72,7 +74,15 @@ class FTP_Client(object):
             exit('Too many times attempt...')
 
     def ls(self, I_cmd, dir):
-
+        ls_dict = {
+            'func' :  'ls',
+            're_pwd': dir
+        }
+        print('23===')
+        self.client.send(self.get_json(ls_dict).encode('utf-8'))    # 发送dict的json格式数据到服务器
+        res = self.client.recv(1024)
+        if res == 'None':
+            pass
         pass
 
     def get_md5(self, src_str):

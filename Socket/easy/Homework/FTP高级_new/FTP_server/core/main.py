@@ -71,6 +71,7 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
                             with open(user_info_dir + username + '.json', 'w', encoding='utf-8') as f:
                                 user_db['is_authenticated'] = -1  # 针对其他设备来说来说，是已经在登陆过的了
                                 json.dump(user_db, f, indent=4)
+                            return user_db
                         else:       # 密码错误
                             user_db['passwd_md5'] = ''
                             # self.request.send(b'Error passwd')
@@ -103,6 +104,15 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
     def alter_uer(self, I_cmd):
         pass
 
+    def ls(self, I_cmd):
+        os.chdir(user_data_base_dir + I_cmd['re_pwd'])
+        ls_res = os.popen(I_cmd['func']).read()
+        ls_dict = {
+            'func': 'ls',
+            'res': ls_res,
+            'Right': True
+        }
+
     def get_md5(self, src_str):
         '''
         对输入的源字符串计算md5值，并返回
@@ -119,6 +129,7 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
 
     def loads_from_json(self, dict):
         return json.loads(dict)
+
 
 
 
