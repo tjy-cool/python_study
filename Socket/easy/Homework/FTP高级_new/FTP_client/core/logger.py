@@ -34,4 +34,14 @@ def logger(username, isshowonscreen):
 
     return logger
 
-
+# def admin_logger():
+#     logger = logging.getLogger('admin')
+#     logger.setLevel(settings.Admin_LOG_LEVEL)
+#     # 设置显示屏的log格式
+#     ch = logging.StreamHandler()
+#     ch.setLevel(settings.Admin_LOG_LEVEL)
+#     ch_format = logging.Formatter('%(asctime)s - %(name)s - %(message)s')
+#     ch.setFormatter(ch_format)
+#     logger.addHandler(ch)
+#
+#     log_file_dir = '%s'

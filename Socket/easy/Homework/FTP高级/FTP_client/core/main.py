@@ -63,8 +63,6 @@ class FTP_Client(object):
             elif recv_user_data['is_authenticated'] == 0:   # 0表示正常登陆
                 return recv_user_data
 
-
-
 def run():
     print('client is running ...')
     client = FTP_Client(settings.HOST, settings.PORT)

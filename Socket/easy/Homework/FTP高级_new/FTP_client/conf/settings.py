@@ -28,6 +28,7 @@ MYERRORS = {
 }
 
 # log等级设置
+Admin_LOG_LEVEL = logging.INFO      # 管理员用户的log等级
 LOG_LEVEL = logging.INFO    # 默认log等级，五个等级为debug，info，warning，error，critical
 IsShowonScreen = False      # 是否在屏幕上显示
 Ch_Format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # log在屏幕上显示格式

@@ -47,8 +47,12 @@ class FTP_Client(object):
             send_data = self.get_json(user_data)  # 将用户数据格化为json格式
             self.client.send(send_data.encode('utf-8'))     # 将用户数据发送给服务器
             recv_user_data = self.client.recv(1024).decode()  # 接收到的用户数据
+            # print(type(recv_user_data))
 
-            if  recv_user_data['user_name'] == None or recv_user_data['passwd_md5'] == None:
+            recv_user_data = json.loads(recv_user_data)      # 反json序列化
+            print('===',recv_user_data)
+
+            if  recv_user_data['user_name'] == '' or recv_user_data['passwd_md5'] == '':
                 print('invalid username or password,try again!')
                 input_count += 1
             elif recv_user_data['locked'] == 1:   # 用户已经被锁住了
@@ -56,7 +60,7 @@ class FTP_Client(object):
             elif recv_user_data['is_authenticated'] == 1: # 1表示已经在其他设备登陆中
                 exit('user [%s] has logined in other device' %recv_user_data['user_name'])
             elif recv_user_data['is_authenticated'] == 0:   # 0表示正常登陆
-                print('[%s] login successful...')
+                print('[%s] login successful...'%recv_user_data['user_name'])
                 return recv_user_data
         else:
             exit('Too many times attempt...')
