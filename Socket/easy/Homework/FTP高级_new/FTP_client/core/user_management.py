@@ -55,7 +55,6 @@ class FTP_User_management(object):
         add_dict['func'] = 'add_user'
         add_dict['user_name'] = user_name
         add_dict['passwd_md5'] = self.get_md5(password)
-
         '''
         add_dict = {
             'func': 'add_user',
@@ -67,7 +66,10 @@ class FTP_User_management(object):
         }
         '''
         self.client.send(self.get_json(add_dict).encode('utf-8'))
+        print('after send')
+
         res = self.client.recv(1024).decode()
+        print('after recv')
         if res == 'OK':
             self.log_obj.info('Add user [%s] successful!' % user_name)
         elif res == 'EXIST':

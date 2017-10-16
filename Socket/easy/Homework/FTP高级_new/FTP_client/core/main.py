@@ -20,11 +20,19 @@ class FTP_Client(object):
     def run(self):
         user_db = self.authentication()
         if isinstance(user_db, dict):     # 返回的数据是字典格式
+            user_current_dir = "%s:home/$"%(user_db['user_name'])   # 保存的是用户目录
             while True:
-                cmd  = input("%s/home>"%(user_db['user_name']))
-                self.client.send(b'')
-                pass
-
+                cmd  = input(user_current_dir).strip()
+                if len(cmd):
+                    if hasattr(self, cmd.split(' ')[0]):
+                        func = getattr(self, cmd.split(' ')[0])
+                        func(cmd, user_current_dir)
+                    else:
+                        print('Error command, Try again...')
+                # else:
+                #     continue
+        else:
+            self.client.close()
 
     def authentication(self):
         '''
@@ -47,11 +55,9 @@ class FTP_Client(object):
             send_data = self.get_json(user_data)  # 将用户数据格化为json格式
             self.client.send(send_data.encode('utf-8'))     # 将用户数据发送给服务器
             recv_user_data = self.client.recv(1024).decode()  # 接收到的用户数据
-            # print(type(recv_user_data))
-
             recv_user_data = json.loads(recv_user_data)      # 反json序列化
-            print('===',recv_user_data)
 
+            # 用户名或密码错误，返回的字典会将用户名或密码置为空字符
             if  recv_user_data['user_name'] == '' or recv_user_data['passwd_md5'] == '':
                 print('invalid username or password,try again!')
                 input_count += 1
@@ -65,6 +71,10 @@ class FTP_Client(object):
         else:
             exit('Too many times attempt...')
 
+    def ls(self, I_cmd, dir):
+
+        pass
+
     def get_md5(self, src_str):
         '''
         对输入的源字符串计算md5值，并返回
@@ -74,6 +84,7 @@ class FTP_Client(object):
         md5 = hashlib.md5()  # 密码进行md5加密处理
         md5.update(bytes(src_str, 'utf-8'))
         return md5.hexdigest()
+
     def get_json(self, src):
         # 将数据格式化为json格式
         return json.dumps(src)
