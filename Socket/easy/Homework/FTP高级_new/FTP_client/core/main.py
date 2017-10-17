@@ -28,7 +28,7 @@ class FTP_Client(object):
                     if hasattr(self, cmd.split(' ')[0]):
                         print('-----')
                         func = getattr(self, cmd.split(' ')[0])
-                        func(cmd, user_re_dir)
+                        user_re_dir = func(cmd, user_re_dir)
                     else:
                         print('Error command, Try again...')
                 # else:
@@ -76,14 +76,16 @@ class FTP_Client(object):
     def ls(self, I_cmd, dir):
         ls_dict = {
             'func' :  'ls',
-            're_pwd': dir
+            're_dir': dir
         }
-        print('23===')
         self.client.send(self.get_json(ls_dict).encode('utf-8'))    # 发送dict的json格式数据到服务器
-        res = self.client.recv(1024)
-        if res == 'None':
-            pass
-        pass
+        res = self.client.recv(1024).decode()
+        res_dict = json.loads(res)
+        if res_dict['run_successfully'] == True:
+            self.client.send(b'Ready to recv')
+            res = self.recv_bytes(res_dict['res_len'])
+            print(res)
+            return res_dict['path']
 
     def get_md5(self, src_str):
         '''
@@ -99,6 +101,16 @@ class FTP_Client(object):
         # 将数据格式化为json格式
         return json.dumps(src)
 
+    def recv_bytes(self, len_bytes, check_md5 = False):
+        recv_len = 0
+        res = ''
+        while recv_len < len_bytes:
+            part_res = self.client.recv(1024)
+            recv_len += len(part_res)
+            res += part_res
+        else :
+            res_str = res.decode()
+            return res_str
 
 def run():
     print('client is running ...')

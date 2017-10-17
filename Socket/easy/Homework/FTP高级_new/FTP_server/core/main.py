@@ -105,13 +105,21 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
         pass
 
     def ls(self, I_cmd):
-        os.chdir(user_data_base_dir + I_cmd['re_pwd'])
+        os.chdir(user_data_base_dir + I_cmd['re_dir'])
         ls_res = os.popen(I_cmd['func']).read()
+        ls_res_bytes = bytes(ls_res, 'utf-8')
         ls_dict = {
             'func': 'ls',
-            'res': ls_res,
-            'Right': True
+            'res_len': len(ls_res_bytes),     # 结果的长度
+            'path': I_cmd['re_dir'],
+            'run_successfully': True
         }
+        self.request.send(self.get_json(ls_dict).encode('utf-8'))
+        comfirm_info = self.request.recv(1024).decode()
+        if comfirm_info == 'Ready to recv':
+            self.send_bytes(ls_res_bytes)
+            print('ls done...')
+
 
     def get_md5(self, src_str):
         '''
@@ -130,8 +138,16 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
     def loads_from_json(self, dict):
         return json.loads(dict)
 
-
-
+    def send_bytes(self, src_bytes):
+        '''发送字节到客户端'''
+        send_len = 0
+        len_src_bytes = len(src_bytes)
+        while send_len < len_src_bytes:
+            if len_src_bytes - send_len > 1024:
+                send_size = 1024
+            else:
+                send_size = len_src_bytes - send_len
+            self.request.send(send_size)
 
 def run():
     print("server is running...")
