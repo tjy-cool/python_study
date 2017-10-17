@@ -26,7 +26,6 @@ class FTP_Client(object):
                 print(cmd)
                 if len(cmd):
                     if hasattr(self, cmd.split(' ')[0]):
-                        print('-----')
                         func = getattr(self, cmd.split(' ')[0])
                         user_re_dir = func(cmd, user_re_dir)
                     else:
@@ -75,7 +74,7 @@ class FTP_Client(object):
 
     def ls(self, I_cmd, dir):
         ls_dict = {
-            'func' :  'ls',
+            'func' :  I_cmd,
             're_dir': dir
         }
         self.client.send(self.get_json(ls_dict).encode('utf-8'))    # 发送dict的json格式数据到服务器
@@ -103,9 +102,13 @@ class FTP_Client(object):
 
     def recv_bytes(self, len_bytes, check_md5 = False):
         recv_len = 0
-        res = ''
+        res = b''
         while recv_len < len_bytes:
-            part_res = self.client.recv(1024)
+            if len_bytes - recv_len >1024:
+                recv_size = 1024
+            else:
+                recv_size = len_bytes - recv_len
+            part_res = self.client.recv(recv_size)
             recv_len += len(part_res)
             res += part_res
         else :

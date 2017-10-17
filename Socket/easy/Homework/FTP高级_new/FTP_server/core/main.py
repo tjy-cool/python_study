@@ -22,7 +22,7 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
                     #     print('断开了一个连接')
                     self.data = self.loads_from_json(self.data)
 
-                    cmd = self.data['func']
+                    cmd = self.data['func'].split(' ')[0]
                     if hasattr(self, cmd):
                         func = getattr(self, cmd)
                         func(self.data)
@@ -117,7 +117,7 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
         self.request.send(self.get_json(ls_dict).encode('utf-8'))
         comfirm_info = self.request.recv(1024).decode()
         if comfirm_info == 'Ready to recv':
-            self.send_bytes(ls_res_bytes)
+            self.request.send(ls_res_bytes)
             print('ls done...')
 
 
@@ -138,16 +138,16 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
     def loads_from_json(self, dict):
         return json.loads(dict)
 
-    def send_bytes(self, src_bytes):
-        '''发送字节到客户端'''
-        send_len = 0
-        len_src_bytes = len(src_bytes)
-        while send_len < len_src_bytes:
-            if len_src_bytes - send_len > 1024:
-                send_size = 1024
-            else:
-                send_size = len_src_bytes - send_len
-            self.request.send(send_size)
+    # def send_bytes(self, src_bytes):
+    #     '''发送字节到客户端'''
+    #     send_len = 0
+    #     len_src_bytes = len(src_bytes)
+    #     while send_len < len_src_bytes:
+    #         if len_src_bytes - send_len > 1024:
+    #             send_size = 1024
+    #         else:
+    #             send_size = len_src_bytes - send_len
+    #         self.request.send(send_size)
 
 def run():
     print("server is running...")
