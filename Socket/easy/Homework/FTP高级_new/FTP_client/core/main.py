@@ -23,11 +23,15 @@ class FTP_Client(object):
             user_re_dir = "%s"%(user_db['user_name'])   # 保存的是相对用户目录
             while True:
                 cmd  = input(user_re_dir+':/$ ').strip()
-                print(cmd)
+                # print(cmd)
                 if len(cmd):
                     if hasattr(self, cmd.split(' ')[0]):
                         func = getattr(self, cmd.split(' ')[0])
-                        user_re_dir = func(cmd, user_re_dir)
+                        cmd_dict = {
+                            'func': cmd,
+                            're_dir': user_re_dir
+                        }
+                        user_re_dir = func(cmd_dict)
                     else:
                         print('Error command, Try again...')
                 # else:
@@ -72,12 +76,28 @@ class FTP_Client(object):
         else:
             exit('Too many times attempt...')
 
-    def ls(self, I_cmd, dir):
-        ls_dict = {
-            'func' :  I_cmd,
-            're_dir': dir
-        }
-        self.client.send(self.get_json(ls_dict).encode('utf-8'))    # 发送dict的json格式数据到服务器
+    def ls(self, cmd_dict):
+        self.no_change_cmd(cmd_dict)
+
+    def pwd(self, cmd_dict):
+        self.no_change_cmd(cmd_dict)
+
+    def ifconfig(self, cmd_dict):
+        self.no_change_cmd(cmd_dict)
+
+    def tree(self, cmd_dict):
+        self.no_change_cmd(cmd_dict)
+
+    def date(self, cmd_dict):
+        '''时间'''
+        self.no_change_cmd(cmd_dict)
+
+    def cal(self, cmd_dict):
+        '''日历'''
+        self.no_change_cmd(cmd_dict)
+
+    def no_change_cmd(self, cmd_dict):
+        self.client.send(self.get_json(cmd_dict).encode('utf-8'))  # 发送dict的json格式数据到服务器
         res = self.client.recv(1024).decode()
         res_dict = json.loads(res)
         if res_dict['run_successfully'] == True:

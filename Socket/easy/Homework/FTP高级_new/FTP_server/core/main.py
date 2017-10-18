@@ -105,21 +105,54 @@ class MyTCPHandlers(socketserver.BaseRequestHandler):
         pass
 
     def ls(self, I_cmd):
+        # os.chdir(user_data_base_dir + I_cmd['re_dir'])
+        # ls_res = os.popen(I_cmd['func']).read()
+        # ls_res_bytes = bytes(ls_res, 'utf-8')
+        # ls_dict = {
+        #     'func': I_cmd['func'],
+        #     'res_len': len(ls_res_bytes),     # 结果的长度
+        #     'path': I_cmd['re_dir'],
+        #     'run_successfully': True
+        # }
+        # self.request.send(self.get_json(ls_dict).encode('utf-8'))
+        # comfirm_info = self.request.recv(1024).decode()
+        # if comfirm_info == 'Ready to recv':
+        #     self.request.send(ls_res_bytes)
+        #     print('ls done...')
+        self.no_change_cmd(I_cmd)
+
+    def pwd(self, I_cmd):
+        self.no_change_cmd(I_cmd)
+
+    def ifconfig(self, I_cmd):
+        self.no_change_cmd(I_cmd)
+
+    def tree(self, I_cmd):
+        self.no_change_cmd(I_cmd)
+
+    def date(self, I_cmd):
+        '''时间'''
+        self.no_change_cmd(I_cmd)
+
+    def cal(self, I_cmd):
+        '''日历'''
+        self.no_change_cmd(I_cmd)
+
+    def no_change_cmd(self, I_cmd):
         os.chdir(user_data_base_dir + I_cmd['re_dir'])
-        ls_res = os.popen(I_cmd['func']).read()
-        ls_res_bytes = bytes(ls_res, 'utf-8')
-        ls_dict = {
-            'func': 'ls',
-            'res_len': len(ls_res_bytes),     # 结果的长度
+        res = os.popen(I_cmd['func']).read()
+        res_bytes = bytes(res, 'utf-8')
+        cmd_dict = {
+            'func': I_cmd['func'],
+            'res_len': len(res_bytes),  # 结果的长度
             'path': I_cmd['re_dir'],
             'run_successfully': True
         }
-        self.request.send(self.get_json(ls_dict).encode('utf-8'))
+        self.request.send(self.get_json(cmd_dict).encode('utf-8'))
         comfirm_info = self.request.recv(1024).decode()
         if comfirm_info == 'Ready to recv':
-            self.request.send(ls_res_bytes)
+            self.request.send(res_bytes)
             print('ls done...')
-
 
     def get_md5(self, src_str):
         '''
