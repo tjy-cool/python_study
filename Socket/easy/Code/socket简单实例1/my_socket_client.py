@@ -4,7 +4,7 @@
 
 import socket
 client = socket.socket()    # self, family=AF_INET, type=SOCK_STREAM, proto=0, fileno=None
-client.connect(("localhost", 1313))
+client.connect(("localhost", 10000))
 while True:
     send_str = input(">> ").strip()
     client.send(send_str.encode("utf-8"))

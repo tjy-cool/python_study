@@ -77,24 +77,24 @@ class FTP_Client(object):
             exit('Too many times attempt...')
 
     def ls(self, cmd_dict):
-        self.no_change_cmd(cmd_dict)
+        return self.no_change_cmd(cmd_dict)
 
     def pwd(self, cmd_dict):
-        self.no_change_cmd(cmd_dict)
+        return self.no_change_cmd(cmd_dict)
 
     def ifconfig(self, cmd_dict):
-        self.no_change_cmd(cmd_dict)
+        return self.no_change_cmd(cmd_dict)
 
     def tree(self, cmd_dict):
-        self.no_change_cmd(cmd_dict)
+        return self.no_change_cmd(cmd_dict)
 
     def date(self, cmd_dict):
         '''时间'''
-        self.no_change_cmd(cmd_dict)
+        return self.no_change_cmd(cmd_dict)
 
     def cal(self, cmd_dict):
         '''日历'''
-        self.no_change_cmd(cmd_dict)
+        return self.no_change_cmd(cmd_dict)
 
     def no_change_cmd(self, cmd_dict):
         self.client.send(self.get_json(cmd_dict).encode('utf-8'))  # 发送dict的json格式数据到服务器
