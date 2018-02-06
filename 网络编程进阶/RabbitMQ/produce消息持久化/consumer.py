@@ -4,6 +4,7 @@ channel = connection.channel()
 
 channel.queue_declare(queue='hello', durable=True)  # 队列持久化
 
+
 def callback(ch, method, properites, body):
     print("--->", ch, method, properites)
     print("[x] received %r" % body)
@@ -12,7 +13,7 @@ def callback(ch, method, properites, body):
 
 channel.basic_consume(callback,
                       queue='hello',
-                    # no_ack=True
+                      # no_ack=True
                       )
 
 print(' [*] Waiting for messages. To exit press CTRL+C')

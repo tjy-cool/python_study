@@ -1,14 +1,15 @@
 #!/usr/bin/env python
-# Funtion:      
+# Funtion:
 # Filename:
 
-import socket, os
+import socket
+import os
 server = socket.socket()
-server.bind(("localhost", 1313))
+server.bind(("localhost", 5025))
 server.listen()
 print("等电话中。。。")
 # conn是打电话的实例，addr是对方地址
-conn,addr = server.accept()
+conn, addr = server.accept()
 print("conn: %s\naddr: %s" % (conn, addr))
 while True:
     data = conn.recv(1024)
@@ -19,4 +20,5 @@ while True:
     else:
         print("recv: %s" % data.decode())
         conn.send(data)
+        print('send ok')
 server.close()
